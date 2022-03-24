@@ -1,5 +1,4 @@
 from flask import Flask
-from flask import escape
 
 myapp_obj = Flask(__name__)
 
