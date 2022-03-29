@@ -6,7 +6,7 @@ myapp_obj = Flask(__name__)
 
 @myapp_obj.route("/")
 def home():
-    return render_template("home.html", city_names = city_names, name= name)
+    return render_template("home.html", city_names = city_names, name = name)
 
 
 
