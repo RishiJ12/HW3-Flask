@@ -2,7 +2,7 @@
 from flask import Flask
 
 myapp_obj = Flask(__name__)
-name = ""
+name = "Rishi"
 city_names = ["Paris", "London", "Rome", "Tahiti"]
 @myapp_obj.route("/")
 def home():
