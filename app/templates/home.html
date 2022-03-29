@@ -1,0 +1,12 @@
+<html>
+    <head>
+            <h1><strong>  Welcome {{name}}</strong> </h1>
+        <a href="www.google.com"> not google </a>
+    </head>
+
+    {%for name in city_names%}
+    <ul style = "line-height:0;">
+            <li>{{name}} </li>
+    </ul>
+        {%endfor%}
+</html>
