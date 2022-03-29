@@ -9,7 +9,7 @@ def home():
     return '''
     <html>
     <head>
-         <h1><strong>  Welcome ''' + name + '''</strong> </h1>
+         <h1><strong>  Welcome ''' + name + '''!</strong> </h1>
         <a href="www.google.com"> not google </a>
     </head>
     <ul style = "line-height:0;">
