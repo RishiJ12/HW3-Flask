@@ -6,8 +6,11 @@ myapp_obj = Flask(__name__)
 
 @myapp_obj.route("/")
 def home():
-    name
-    city_names = []
-    return render_template("home.html", len = len(city_names), city_names = city_names)
+    return render_template("home.html", city_names = city_names, name= name)
 
-# myapp_obj.run()
+
+
+
+
+
+
