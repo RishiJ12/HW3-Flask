@@ -1,12 +1,30 @@
 <html>
-    <head>
+	<head>
+	
+	    {% with messages = get_flashed_messages() %} 
+	    {% if messages %}
+	    <ul>
+		    {% for message in messages %}
+		    <li> {{message}} </li>
+		    {% endfor %}
+	    </ul>
+	    {% endif %}
+	    {% endwith %}
             <h1><strong>  Welcome {{name}}</strong> </h1>
         <a href="www.google.com"> not google </a>
-    </head>
+	    </head>
+
+    <body>
 
     {%for name in city_names%}
     <ul style = "line-height:0;">
             <li>{{name}} </li>
     </ul>
         {%endfor%}
+	<p> City Name </p>
+	<form method="POST">	
+		<input name="text" type = 'string' maxlength="32"> <br>
+		<button type="submit" name="submit">Submit</button>
+	</form>
+    </body>
 </html>
