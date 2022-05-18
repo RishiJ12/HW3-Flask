@@ -1,5 +1,5 @@
 from flask import Flask
  
-myapp_obj = Flask(__name__)
-myapp_obj.secret_key = 'QWERTFDS13124351' 
+myobj = Flask(__name__)
+myobj.secret_key = 'QWERTFDS13124351' 
 from app import routes
